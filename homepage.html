@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="homepage.css">
+    <script src="add.js"></script>
+</head>
+
+<body>
+    <header>Address Book</header>
+    <div class="topnav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#" id="addLink">+ADD</a></li>
+        </ul>
+        <div class="image">
+            <img src="./assets/blog-icon.png">
+        </div>
+    </div>
+    <h3 id="contactsTitle">CONTACTS</h3>
+    <div class="outer-container">
+        <div id="contactList">
+        </div>
+        <div id="fullDetails">
+        </div>
+    </div>
+    <dialog id="myModal" class="modal">
+        <div class="modal-content">
+            <form id="myForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="joining">
+                    <div class="mobile">
+                        <label for="mobile">Mobile:</label>
+                        <input type="tel" id="mobile" name="mobile" required>
+                    </div>
+                    <div class="landline">
+                        <label for="landline">Landline:</label>
+                        <input type="tel" id="landline" name="landline" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="website">Website:</label>
+                    <input type="text" id="website" name="website" required>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" id="id" name="id">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+                </div><br>
+                <input id="submitBtn" type="submit" value="Add">
+            </form>
+        </div>
+    </dialog>
+</body>
+
+</html>
